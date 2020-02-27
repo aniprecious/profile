@@ -1,0 +1,136 @@
+*{
+     margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   
+   
+}
+body{
+    background-color: violet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+
+}
+
+header{
+    width: 100%;
+    padding: 20px;
+
+}
+
+header > h1{
+    margin: 20px;
+    text-align: center;
+    font-size: 3rem;
+
+}
+header > hr{
+    border-color: yellow;
+}
+
+main{
+    display: block;
+    padding: 2rem  1.5rem;
+
+}
+
+main > section{
+    margin-bottom: 40px;
+}
+
+main  > section#image-section{
+    border-radius: 4px;
+    overflow: hidden;
+}
+main > section#image-section > img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+main > section#info{
+    width: 100%;
+    padding: 20px;
+    border: 1px #facd3b solid;
+    border-radius: 6px;
+    background-color: yellowgreen;
+    box-shadow: #888888 4px 4px 8px;
+
+}
+
+main > section#info  >h2{
+    margin: 10px;
+    text-align: center;
+}
+main > section#info  >p{
+    margin-bottom: 10px;
+}
+
+main > section#info  >div{
+    width: 40%;
+    margin: 20px auto;
+}
+
+main > section#info  >a{
+    width: 100%;
+
+}
+main > section#info  button{
+    width: 100%;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(42, 138, 128);
+    font-weight:600px ;
+    font-size: 12pt;
+    transition-duration: 500ms;
+}
+main > section#info button:hover{
+  cursor: pointer;
+  color: bisque;  
+  box-shadow: coral;
+}
+footer{
+    margin: -30px 50px 20px 50px;
+    padding: 20px;
+    background-color: black;
+}
+footer p{
+    text-align: center;
+    color: rgb(252, 245, 245);
+    font-size: 11pt;
+
+}
+/* media queries */
+@media(min-width:768px){
+    header{
+        height: 15vh;
+        background-color: blanchedalmond;
+
+    }
+
+    header > h1{
+        text-align: left;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    main > section#image-section{
+        width: 30%;
+    }
+    main > section#info{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+
+
+
